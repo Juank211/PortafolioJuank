@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Camilo López Rúa | Senior Portfolio - Software Dev & IT Support</title>
+    <meta name="description"
+        content="Portafolio profesional de Juan Camilo López Rúa, Desarrollador de Software y Especialista en Soporte TI con 19 años de experiencia.">
+    <meta name="keywords"
+        content="Software Development, IT Support, SAP, Python, Data Management, Juan Camilo Lopez Rua">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <!-- Canvas for Shockwave effect -->
+    <canvas id="shockwave-canvas"></canvas>
+
+    <!-- Deep space subtle backgrounds -->
+    <div class="bg-orbits"></div>
+
+    <main class="container">
+        <!-- 1. Estructura de Datos e Identidad -->
+        <section id="hero" class="antigravity-entity glass-panel">
+            <div class="hero-content">
+                <div id="perfil-foto" class="profile-pic">
+                    <img src="https://res.cloudinary.com/dcryrnjby/image/upload/v1772842882/Gemini_Generated_Image_v5r2d4v5r2d4v5r2_h0emmr.jpg"
+                        alt="Juan Camilo López Rúa">
+                </div>
+                <h1 class="name-title">Juan Camilo López Rúa</h1>
+                <h2 class="job-title">Desarrollador de Software | Especialista en Soporte TI y Gestión de Datos</h2>
+                <p class="bio">
+                    Profesional con 19 años de liderazgo en el Ejército Nacional de Colombia, experto en sistemas
+                    críticos y SAP, en transición al desarrollo de software con Python y análisis de datos.
+                </p>
+                <div class="social-links hero-socials">
+                    <a href="https://linkedin.com/in/juan-camilo-lopez-rua-79b981b4" target="_blank" class="social-icon"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Juank211" target="_blank" class="social-icon" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:juanco7732@gmail.com" class="social-icon" aria-label="Email"><i
+                            class="fa-solid fa-paper-plane"></i></a>
+                </div>
+                <!-- Botón Flotante con efecto de atracción -->
+                <div class="hero-actions">
+                    <a href="https://res.cloudinary.com/dcryrnjby/raw/upload/v1772843891/Hoja_de_Vida_Juan_Camilo_Lopez_Rua_swg8os.docx"
+                        id="download-cv-btn" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-download"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section Categorizada -->
+        <section id="skills" class="antigravity-entity glass-panel">
+            <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Habilidades Técnicas</h2>
+
+            <div class="skills-grid-wrapper">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-container wrapper-physics">
+                        <div class="skill-badge physics-badge"><i class="fa-brands fa-python"></i> Python 3</div>
+                        <div class="skill-badge physics-badge"><i class="fa-brands fa-js"></i> JavaScript (Lógica
+                            algorítmica)</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data & Enterprise</h3>
+                    <div class="skills-container wrapper-physics">
+                        <div class="skill-badge physics-badge"><i class="fa-solid fa-server"></i> SAP (PM/Logística)
+                        </div>
+                        <div class="skill-badge physics-badge"><i class="fa-solid fa-file-excel"></i> Excel Avanzado
+                            (Macros/Power Query)</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Infra</h3>
+                    <div class="skills-container wrapper-physics">
+                        <div class="skill-badge physics-badge"><i class="fa-solid fa-headset"></i> Soporte IT</div>
+                        <div class="skill-badge physics-badge"><i class="fa-solid fa-network-wired"></i> Redes</div>
+                        <div class="skill-badge physics-badge"><i class="fa-solid fa-database"></i> SQL (Oracle/MySQL)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section id="proyectos" class="antigravity-entity glass-panel">
+            <h2 class="section-title"><i class="fa-solid fa-rocket"></i> Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-panel inner-panel">
+                    <h3><i class="fa-brands fa-python"></i> Scripts Python (Cisco)</h3>
+                    <p>Optimización de lógica y estructuras de datos para automatizar y agilizar procesos.</p>
+                </div>
+                <div class="project-card glass-panel inner-panel">
+                    <h3><i class="fa-solid fa-chart-line"></i> Dashboards Operacionales</h3>
+                    <p>Automatización de reportes en Excel combinando macros y Power Query.</p>
+                </div>
+                <div class="project-card glass-panel inner-panel">
+                    <h3><i class="fa-solid fa-laptop-code"></i> VetManager/ADSO (SENA)</h3>
+                    <p>Análisis de requisitos y prototipado de software para soluciones eficientes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia y Educación Section -->
+        <section id="experiencia" class="antigravity-entity glass-panel">
+            <h2 class="section-title"><i class="fa-solid fa-timeline"></i> Trayectoria y Formación</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Ejército Nacional de Colombia</h3>
+                        <span class="date">2007 - Presente</span>
+                        <p>19 años de liderazgo. Destacado en la digitalización de procesos, gestión del sistema SAP
+                            (PM/Logística) y administración de sistemas críticos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>INPAHU</h3>
+                        <span class="date">Educación</span>
+                        <p>Formación académica en Telecomunicaciones, estableciendo bases sólidas en redes, soporte IT e
+                            infraestructura técnica.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Certificaciones Profesionales</h3>
+                        <span class="date">Continua</span>
+                        <p>Múltiples certificaciones en Cisco y la Fundación Telefónica enfocadas en áreas tecnológicas
+                            de vanguardia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="antigravity-entity glass-panel">
+            <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Contacto y Servicios</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente o necesitas soporte TI especializado? ¡Hablemos!
+            </p>
+
+            <form action="https://formspree.io/f/mdawaqan" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="full-name">Nombre Completo</label>
+                    <input type="text" id="full-name" name="name" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="_replyto" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Cuéntame más sobre tu solicitud..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Enviar Mensaje</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+
+        <!-- Dynamic Comments Section (Vertical Layout) -->
+        <section id="comentarios" class="antigravity-entity glass-panel comments-section">
+            <h2 class="section-title"><i class="fa-solid fa-comments"></i> Comentarios de la Comunidad</h2>
+
+            <!-- Area de entrada (Superior) -->
+            <div id="comment-input-area" class="comment-input-wrapper">
+                <!-- Se inyectará el formulario si está logueado, o el mensaje si no -->
+                <div id="auth-check-placeholder" class="auth-message-card">
+                    <p>Inicia sesión para dejar un comentario.</p>
+                    <button class="open-auth-link" id="open-auth-trigger">Ingresar / Registrarse</button>
+                </div>
+
+                <div id="logged-comment-form" style="display: none;">
+                    <div class="comment-form-box">
+                        <textarea id="main-comment-textarea" placeholder="Escribe tu comentario aquí..."
+                            rows="3"></textarea>
+                        <div class="form-footer">
+                            <span id="user-display-name" class="user-label"></span>
+                            <div class="form-actions">
+                                <button id="submit-main-comment" class="submit-btn small-btn">Publicar</button>
+                                <button id="logout-link" class="text-link">Cerrar Sesión</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de Comentarios (Debajo) -->
+            <div id="comments-list-vertical" class="comments-vertical-list">
+                <!-- Comments will be injected here chronologically inverse -->
+            </div>
+
+            <div class="pagination-container">
+                <button id="load-more-comments" class="load-more-btn">Ver más</button>
+            </div>
+        </section>
+
+        <!-- Auth Modal (Email/Password) -->
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="auth-modal" id="auth-modal">
+            <button class="close-modal" id="close-modal">&times;</button>
+
+            <div id="auth-tabs" class="auth-tabs">
+                <button class="auth-tab active" data-target="login-view">Ingreso</button>
+                <button class="auth-tab" data-target="signup-view">Registro</button>
+            </div>
+
+            <div id="login-view" class="auth-view active">
+                <h3 class="auth-subtitle">Bienvenido de nuevo</h3>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="login-email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group password-group">
+                        <label>Contraseña</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="login-password" placeholder="••••••••" required>
+                            <button type="button" class="password-toggle" data-input="login-password">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="submit-btn" id="do-login">Entrar</button>
+                </div>
+            </div>
+
+            <div id="signup-view" class="auth-view">
+                <h3 class="auth-subtitle">Crea tu cuenta</h3>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" id="signup-name" placeholder="Juan Perez" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="signup-email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group password-group">
+                        <label>Contraseña</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="signup-password" placeholder="••••••••" required>
+                            <button type="button" class="password-toggle" data-input="signup-password">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group password-group">
+                        <label>Confirmar Contraseña</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="signup-password-confirm" placeholder="••••••••" required>
+                            <button type="button" class="password-toggle" data-input="signup-password-confirm">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="submit-btn" id="do-signup">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            // Unify Chatbase Reset and Initialization
+            function resetChatbase() {
+                localStorage.removeItem('chatbase-session'); // common key
+                // Clear any other chatbase related items in localStorage
+                Object.keys(localStorage).forEach(key => {
+                    if (key.toLowerCase().includes('chatbase')) {
+                        localStorage.removeItem(key);
+                    }
+                });
+            }
+
+            resetChatbase();
+
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                window.chatbase = (...arguments) => {
+                    if (!window.chatbase.q) { window.chatbase.q = [] }
+                    window.chatbase.q.push(arguments)
+                };
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if (prop === "q") { return target.q }
+                        return (...args) => target(prop, ...args)
+                    }
+                })
+            }
+            const onLoad = function () {
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "tSj_X3fB_YlGXQUvM01Vj";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script)
+            };
+            if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) }
+        })();
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
