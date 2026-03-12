@@ -320,13 +320,13 @@ document.addEventListener('DOMContentLoaded', () => {
             password,
             options: {
                 data: { full_name: name },
-                emailRedirectTo: 'https://juank211.github.io/PotafolioPersonal/'
+                emailRedirectTo: 'https://juank211.github.io/PortafolioJuank/'
             }
         });
 
         if (error) alert(error.message);
         else alert('¡Registro solicitado! Revisa tu email para confirmar tu cuenta.');
-        
+
         btn.innerText = 'Registrarse';
     });
 
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data.forEach(comment => {
             const div = document.createElement('div');
             div.className = 'vertical-comment';
-            
+
             const name = comment.profiles?.full_name || 'Usuario';
             const date = new Date(comment.created_at).toLocaleString();
 
